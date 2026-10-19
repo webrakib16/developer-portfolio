@@ -1,0 +1,320 @@
+/* ==========================================================
+   TECH STACK SECTION - MATCHING REFERENCE IMAGE 2
+   (Light translucent glass cards, theme border on hover,
+   original authentic icons with default grayscale filter)
+   ========================================================== */
+
+.techstack-new {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 0 120px;
+  box-sizing: border-box;
+}
+
+/* Video Background */
+.techstack-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.techstack-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark Overlay */
+.techstack-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 2, 10, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+/* Top gradient fade - blends smoothly with Work section above */
+.techstack-video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, #05020c 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bottom gradient fade - blends smoothly with CallToAction / Contact below */
+.techstack-video-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to top, #05020c 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Content Container */
+.techstack-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Header */
+.techstack-header {
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.techstack-pill-tag {
+  display: inline-block;
+  padding: 5px 16px;
+  border-radius: 9999px;
+  background: rgba(147, 51, 234, 0.2);
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  color: #e9d5ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.techstack-title {
+  font-size: 64px;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 10%, #d8b4fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.techstack-subtitle {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(230, 220, 250, 0.7);
+  margin: 0;
+  max-width: 620px;
+}
+
+/* Pyramid Container */
+.techstack-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+/* Each Row */
+.techstack-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================
+   TRANSLUCENT GLASS TECH CARD (MATCHING REFERENCE IMAGE 2)
+   - NOT dark! Light translucent glass so background shines through
+   - Preserves current shape and size
+   - Website theme color on hover
+   ========================================================== */
+.techstack-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 102px;
+  padding: 12px 6px 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03); /* NOT dark, completely translucent glass */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Hover: Website theme border color + theme glow */
+.techstack-card:hover,
+.techstack-card:focus {
+  transform: translateY(-6px) scale(1.08);
+  background: rgba(194, 164, 255, 0.1);
+  border-color: var(--accentColor, #c2a4ff); /* Website theme color */
+  box-shadow: 0 8px 30px rgba(194, 164, 255, 0.25);
+  z-index: 10;
+}
+
+/* Original Icon Image: Monochrome by default, full authentic original on hover */
+.techstack-icon-img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(1.2) brightness(1.5);
+  opacity: 0.85;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.techstack-card:hover .techstack-icon-img,
+.techstack-card:focus .techstack-icon-img {
+  filter: none; /* Full original authentic icon colors */
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Tech Name */
+.techstack-name {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 82px;
+  transition: color 0.3s ease;
+}
+
+.techstack-card:hover .techstack-name,
+.techstack-card:focus .techstack-name {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN (TABLETS & MOBILE)
+   ========================================================== */
+
+@media screen and (max-width: 1200px) {
+  .techstack-card {
+    width: 82px;
+    height: 94px;
+    padding: 10px 5px;
+  }
+
+  .techstack-icon-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .techstack-name {
+    font-size: 10.5px;
+    max-width: 74px;
+  }
+
+  .techstack-title {
+    font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .techstack-title {
+    font-size: 44px;
+  }
+
+  .techstack-pyramid {
+    gap: 10px;
+  }
+
+  .techstack-row {
+    gap: 10px;
+  }
+
+  .techstack-card {
+    width: 74px;
+    height: 86px;
+    padding: 9px 4px;
+    border-radius: 14px;
+  }
+
+  .techstack-icon-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .techstack-name {
+    font-size: 10px;
+    max-width: 68px;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .techstack-new {
+    padding: 70px 0 90px;
+  }
+
+  .techstack-title {
+    font-size: 34px;
+  }
+
+  .techstack-subtitle {
+    font-size: 13px;
+  }
+
+  .techstack-pyramid {
+    gap: 8px;
+  }
+
+  .techstack-row {
+    gap: 8px;
+  }
+
+  .techstack-card {
+    width: 64px;
+    height: 76px;
+    padding: 8px 3px;
+    border-radius: 12px;
+  }
+
+  .techstack-icon-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .techstack-name {
+    font-size: 9px;
+    max-width: 58px;
+    margin-top: 5px;
+  }
+}

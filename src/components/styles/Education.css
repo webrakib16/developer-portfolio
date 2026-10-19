@@ -1,0 +1,616 @@
+/* ==========================================================
+   EDUCATION SECTION - 3D CYBERPUNK GLASSMORPHISM CARDS
+   ========================================================== */
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 110px 0 140px;
+  background: transparent;
+  width: 100%;
+}
+
+/* Ambient cosmic glow behind section */
+.edu-ambient-glow {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(100px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.edu-glow-top {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+  height: 380px;
+  background: radial-gradient(
+    circle,
+    rgba(147, 51, 234, 0.35) 0%,
+    rgba(107, 33, 168, 0.18) 45%,
+    transparent 75%
+  );
+}
+
+.edu-glow-bottom {
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 950px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(126, 34, 206, 0.25) 0%,
+    transparent 70%
+  );
+}
+
+.education-container {
+  width: var(--cWidth, 90%);
+  max-width: 1260px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ----------------------------------------------------------
+   HEADER
+   ---------------------------------------------------------- */
+.education-header {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-badge-pill-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 18px;
+  border-radius: 9999px;
+  background: rgba(26, 12, 48, 0.75);
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.28), inset 0 0 12px rgba(168, 85, 247, 0.12);
+  color: #e9d5ff;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.edu-badge-icon {
+  font-size: 14px;
+  color: #c084fc;
+}
+
+.edu-title {
+  font-size: 58px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.edu-title-gradient {
+  background: linear-gradient(135deg, #c084fc 15%, #e879f9 65%, #a855f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+.edu-subtitle {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(216, 180, 254, 0.72);
+  margin: 0 auto;
+  max-width: 580px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* ----------------------------------------------------------
+   CONNECTING TRACK SVG (DESKTOP)
+   ---------------------------------------------------------- */
+.edu-track-container {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  margin-bottom: -15px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.edu-track-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.edu-animated-path {
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.8));
+  animation: pathDashScroll 25s linear infinite;
+}
+
+@keyframes pathDashScroll {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.edu-center-sparkle {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: #f0abfc;
+  text-shadow: 0 0 10px #d946ef, 0 0 20px #a855f7;
+  animation: sparkleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes sparkleGlow {
+  0% {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------------------
+   3D CARDS GRID - STAGGERED ELEVATION
+   ---------------------------------------------------------- */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  align-items: start;
+}
+
+/* Staggered Heights: 1st & 3rd cards higher, 2nd card lower in middle */
+.edu-card-item-1 {
+  margin-top: 0;
+}
+
+.edu-card-item-2 {
+  margin-top: 55px;
+}
+
+.edu-card-item-3 {
+  margin-top: 0;
+}
+
+/* Glassmorphism Card Frame */
+.edu-card-glass {
+  position: relative;
+  border-radius: 26px;
+  padding: 26px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+  background: linear-gradient(
+    175deg,
+    rgba(28, 14, 56, 0.78) 0%,
+    rgba(13, 6, 29, 0.92) 100%
+  );
+  border: 1px solid rgba(168, 85, 247, 0.38);
+  box-shadow: 
+    0 18px 45px -10px rgba(0, 0, 0, 0.75),
+    0 0 28px -4px rgba(147, 51, 234, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 0 20px rgba(168, 85, 247, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+.edu-card-glass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(216, 180, 254, 0.6) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.edu-card-glass:hover {
+  transform: translateY(-10px);
+  border-color: rgba(216, 180, 254, 0.75);
+  box-shadow: 
+    0 25px 60px -12px rgba(147, 51, 234, 0.48),
+    0 0 40px rgba(168, 85, 247, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 0 30px rgba(192, 132, 252, 0.16);
+}
+
+/* Card Top Row */
+.edu-card-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.edu-period-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edu-period-year {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.edu-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #c084fc;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.edu-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e879f9;
+  box-shadow: 0 0 8px #e879f9;
+  animation: dotPulse 2s infinite ease-in-out;
+}
+
+@keyframes dotPulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(232, 121, 249, 0.7);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 7px rgba(232, 121, 249, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(232, 121, 249, 0);
+  }
+}
+
+/* ----------------------------------------------------------
+   3D VISUAL ILLUSTRATION
+   ---------------------------------------------------------- */
+.edu-visual-container {
+  position: relative;
+  width: 100%;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0 16px;
+  overflow: visible;
+}
+
+.edu-visual-ambient {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(168, 85, 247, 0.45) 0%,
+    rgba(126, 34, 206, 0.15) 50%,
+    transparent 75%
+  );
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+.edu-visual-img {
+  max-width: 160px;
+  max-height: 145px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 0 16px rgba(168, 85, 247, 0.55));
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 95%);
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 95%);
+}
+
+/* Floating animation variations */
+.edu-card-item-1 .edu-visual-img {
+  animation: floatCard1 4.5s ease-in-out infinite;
+}
+
+.edu-card-item-2 .edu-visual-img {
+  animation: floatCard2 5.2s ease-in-out infinite -1.5s;
+}
+
+.edu-card-item-3 .edu-visual-img {
+  animation: floatCard3 4.2s ease-in-out infinite -0.8s;
+}
+
+@keyframes floatCard1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(1deg);
+  }
+}
+
+@keyframes floatCard2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-1.5deg);
+  }
+}
+
+@keyframes floatCard3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.2deg);
+  }
+}
+
+.edu-card-glass:hover .edu-visual-img {
+  filter: drop-shadow(0 0 25px rgba(216, 180, 254, 0.85));
+}
+
+/* ----------------------------------------------------------
+   CONTENT BLOCK
+   ---------------------------------------------------------- */
+.edu-content-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.edu-degree-heading {
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.2px;
+}
+
+.edu-icon-inline {
+  display: none;
+}
+
+.edu-institution-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(220, 200, 255, 0.82);
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.edu-inst-icon {
+  font-size: 13px;
+  color: #c084fc;
+  flex-shrink: 0;
+}
+
+.edu-status-pill-wrap {
+  margin-bottom: 14px;
+}
+
+.edu-status-pill-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  background: rgba(147, 51, 234, 0.28);
+  border: 1px solid rgba(192, 132, 252, 0.45);
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.22);
+  color: #f5d0fe;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.edu-status-dot {
+  color: #e879f9;
+  font-size: 13px;
+}
+
+.edu-description-text {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(225, 215, 245, 0.72);
+  margin: 0;
+  min-height: 64px;
+}
+
+/* ----------------------------------------------------------
+   FOOTER BEVEL ACCENTS - CENTERED TAG AS REQUESTED
+   ---------------------------------------------------------- */
+.edu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+  position: relative;
+  width: 100%;
+}
+
+.edu-orb-light {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f0abfc 15%, #c084fc 60%, #7e22ce 100%);
+  box-shadow: 0 0 10px #c084fc, 0 0 18px #a855f7;
+  animation: orbGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes orbGlow {
+  0% {
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-50%) scale(1.25);
+    opacity: 1;
+    box-shadow: 0 0 14px #e879f9, 0 0 24px #c084fc;
+  }
+}
+
+.edu-tag-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(192, 132, 252, 0.9);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.edu-bottom-mesh {
+  position: absolute;
+  right: -24px;
+  bottom: -22px;
+  width: 65px;
+  height: 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.25) 0%,
+    transparent 80%
+  );
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  pointer-events: none;
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+@media screen and (max-width: 1080px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .edu-card-item-2 {
+    margin-top: 0;
+  }
+
+  .edu-track-container {
+    display: none;
+  }
+
+  .edu-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education-section {
+    padding: 80px 0 90px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+    gap: 28px;
+  }
+
+  .edu-card-item-1,
+  .edu-card-item-2,
+  .edu-card-item-3 {
+    margin-top: 0;
+  }
+
+  .edu-title {
+    font-size: 40px;
+  }
+
+  .edu-subtitle {
+    font-size: 14.5px;
+    padding: 0 10px;
+  }
+
+  .edu-card-glass {
+    min-height: auto;
+    padding: 24px 20px 20px;
+  }
+
+  .edu-visual-container {
+    height: 140px;
+  }
+
+  .edu-visual-img {
+    max-width: 140px;
+    max-height: 130px;
+  }
+
+  .edu-description-text {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .edu-title {
+    font-size: 34px;
+  }
+
+  .edu-badge-pill-header {
+    font-size: 10.5px;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+  }
+
+  .edu-degree-heading {
+    font-size: 17.5px;
+  }
+}

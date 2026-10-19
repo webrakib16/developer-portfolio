@@ -188,8 +188,8 @@
 
 /* ─── Responsive Breakpoints ──────────────────────────────── */
 
-/* Hide hamburger + mobile resume on larger screens */
-@media only screen and (min-width: 600px) {
+/* Hide hamburger + mobile resume on tablets and above (>= 768px) */
+@media only screen and (min-width: 768px) {
   /* Show desktop nav, hide mobile controls */
   .navbar-desktop-links {
     flex-direction: row;
@@ -210,8 +210,8 @@
   }
 }
 
-/* Show mobile controls on small screens */
-@media only screen and (max-width: 599px) {
+/* Show mobile controls only on small screens (< 768px) */
+@media only screen and (max-width: 767px) {
   .navbar-desktop-links {
     display: none;
   }

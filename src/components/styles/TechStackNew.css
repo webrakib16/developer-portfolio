@@ -279,6 +279,49 @@
   }
 }
 
+/* Tablet (768px - 1024px) — properly sized cards */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .techstack-new {
+    padding: 80px 0 100px;
+    min-height: auto;
+  }
+
+  .techstack-title {
+    font-size: 48px;
+  }
+
+  .techstack-subtitle {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .techstack-pyramid {
+    gap: 12px;
+  }
+
+  .techstack-row {
+    gap: 12px;
+  }
+
+  .techstack-card {
+    width: 82px;
+    height: 96px;
+    padding: 10px 5px;
+    border-radius: 16px;
+  }
+
+  .techstack-icon-img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .techstack-name {
+    font-size: 10.5px;
+    max-width: 76px;
+    margin-top: 7px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .techstack-new {
     padding: 70px 0 90px;

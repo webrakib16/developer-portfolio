@@ -108,15 +108,18 @@ export function setCharTimeline(
           0.3
         );
 
-      tl3
-        .fromTo(
-          ".character-model",
-          { y: "0%" },
-          { y: "-100%", duration: 4, ease: "none", delay: 1 },
-          0
-        )
-        .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0)
-        .to(character.rotation, { x: -0.04, duration: 2, delay: 1 }, 0);
+      // On tablet, skip the character scroll-off animation (tl3) so Work/Contact sections remain visible
+      if (window.innerWidth > 1024) {
+        tl3
+          .fromTo(
+            ".character-model",
+            { y: "0%" },
+            { y: "-100%", duration: 4, ease: "none", delay: 1 },
+            0
+          )
+          .fromTo(".whatIDO", { y: 0 }, { y: "15%", duration: 2 }, 0)
+          .to(character.rotation, { x: -0.04, duration: 2, delay: 1 }, 0);
+      }
     }
   } else {
     if (character) {

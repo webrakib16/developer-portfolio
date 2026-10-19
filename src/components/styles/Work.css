@@ -343,9 +343,60 @@
 }
 
 /* ==========================================================
-   RESPONSIVE (MOBILE & TABLET)
+   RESPONSIVE TABLET (768px - 1024px)
    ========================================================== */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .work-section {
+    height: auto;
+    padding: 80px 0 100px;
+  }
+
+  .work-section h2 {
+    font-size: 52px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .work-container {
+    height: auto;
+    width: 92%;
+  }
+
+  .work-flex {
+    flex-direction: column;
+    margin-left: 0;
+    padding-right: 0;
+    gap: 28px;
+  }
+
+  .work-flex::before,
+  .work-flex::after {
+    display: none;
+  }
+
+  .work-box {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px 32px;
+  }
+
+  .work-box-cta {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 35px 32px;
+  }
+
+  .work-card-bottom {
+    flex-direction: row;
+  }
+}
+
+/* ==========================================================
+   RESPONSIVE MOBILE (< 768px)
+   ========================================================== */
+@media screen and (max-width: 767px) {
   .work-section {
     height: auto;
     padding: 70px 0 90px;

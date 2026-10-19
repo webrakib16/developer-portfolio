@@ -3,7 +3,10 @@ import gsap from "gsap";
 import { lenis } from "../Navbar";
 
 export function initialFX() {
-  document.body.style.overflowY = "auto";
+  // Only override overflow on mobile — tablet/desktop uses Lenis (needs overflow:hidden)
+  if (window.innerWidth < 768) {
+    document.body.style.overflowY = "auto";
+  }
   if (lenis) {
     lenis.start();
   }

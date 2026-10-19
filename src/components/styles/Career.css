@@ -282,11 +282,14 @@
   }
 
   .career-section {
-    padding-top: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 0px;
-
+    margin-bottom: 0;
     align-items: start;
     place-items: inherit;
     justify-content: left;
+    position: relative;
+    z-index: 1;
   }
 }

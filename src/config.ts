@@ -2,7 +2,7 @@ export const config = {
     developer: {
         name: "Akib Rakib",
         fullName: "Akib Rakib",
-        title: "Frontend & React Developer",
+        title: "Frontend Dev & AI Engineer",
         tagline: "I Don't Just Write Code. I Build Solutions.",
         description: "I build modern, responsive web applications using React, Next.js, and TypeScript, while developing backend solutions with Node.js, Express.js, REST APIs, and databases.",
         coreStack: [
@@ -76,86 +76,101 @@ export const config = {
     },
     experiences: [
         {
-            position: "Full Stack Developer",
-            company: "Learning & Projects",
+            position: "Full Stack Dev & AI Engineer",
+            company: "Technical Expertise & Projects",
             period: "2026 – NOW",
             location: "Bangladesh",
-            description: "Deepening my frontend and backend development skills, building practical web projects, and continuously learning modern technologies to create responsive and functional web applications.",
+            description: "Combining full-stack development expertise with AI engineering to build intelligent, scalable web applications. Architecting end-to-end solutions with modern frameworks, RESTful APIs, and AI-powered integrations that push the boundaries of what the web can do.",
             responsibilities: [
-                "Developing full-stack web applications with React, Next.js, and Node.js",
-                "Architecting REST APIs, request validation, and database operations",
-                "Building responsive, accessible user interfaces with Tailwind CSS",
-                "Implementing modern authentication and state management"
+                "Building intelligent full-stack applications with AI integrations",
+                "Designing scalable REST APIs and AI-powered backend services",
+                "Crafting performant, accessible frontends with React and Next.js",
+                "Implementing modern authentication, databases, and automation workflows"
             ],
-            technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB"]
+            technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "AI APIs"]
         },
         {
-            position: "AI-Powered Development",
-            company: "Learning & Projects",
+            position: "Full Stack Developer",
+            company: "Self-Taught & Projects",
             period: "2025",
             location: "Bangladesh",
-            description: "Explored AI technologies and built projects with AI-powered tools, strengthening my problem-solving skills and understanding of AI-assisted development.",
+            description: "Expanded into full-stack development through self-directed learning and hands-on projects. Built complete web applications covering both frontend and backend — mastering REST APIs, databases, authentication, and deployment to deliver real-world solutions.",
             responsibilities: [
-                "Leveraging modern AI-assisted development workflows",
-                "Integrating AI APIs and intelligent assistants into web applications",
-                "Automating repetitive workflows and problem-solving with AI tools",
-                "Exploring competitive programming and algorithmic thinking"
+                "Developed full-stack web applications with React, Next.js, and Node.js",
+                "Architected REST APIs, request validation, and CRUD database operations",
+                "Built responsive, accessible user interfaces with Tailwind CSS",
+                "Implemented authentication systems and state management solutions"
             ],
-            technologies: ["AI Tools", "Prompt Engineering", "Web APIs", "Problem Solving", "Automation"]
+            technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "Better Auth"]
         },
         {
-            position: "Frontend Developer",
-            company: "Learning & Projects",
+            position: "Digital Marketer & Frontend Developer",
+            company: "Begin Learning",
             period: "2024",
             location: "Bangladesh",
-            description: "Started my programming journey with HTML5 and CSS3, progressing into modern web development and exploring React, Next.js, and Tailwind CSS.",
+            description: "Took a bold step into both digital marketing and frontend development simultaneously. Started with HTML5 and CSS3, progressed into React and Next.js, while exploring digital marketing strategies to understand both the technical and business sides of the web.",
             responsibilities: [
-                "Mastered modern HTML5 semantic markup and CSS3 layout techniques",
+                "Learned modern HTML5 semantic markup and CSS3 layout techniques",
                 "Built responsive, interactive web interfaces with JavaScript and React",
-                "Explored Next.js routing, server components, and Tailwind styling",
-                "Developed a keen eye for responsive web design and performance"
+                "Explored digital marketing fundamentals, SEO, and online strategies",
+                "Developed a strong foundation in web performance and user experience"
             ],
-            technologies: ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Tailwind CSS"]
+            technologies: ["HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Tailwind CSS", "Digital Marketing"]
         },
         {
             position: "Graphic Designer & Video Editor",
-            company: "Creative Projects",
+            company: "Freelance & Projects",
             period: "2023",
             location: "Bangladesh",
-            description: "Expanded my creative work through graphic design, video editing, and Canva, producing visual content for different creative needs.",
+            description: "Expanded creative capabilities by combining graphic design with video editing, delivering compelling visual content for freelance clients and personal projects. Developed a strong eye for storytelling through motion and visual design.",
             responsibilities: [
-                "Produced engaging visual content, brand assets, and thumbnails",
-                "Edited multimedia video content for creative showcases",
-                "Utilized Canva and digital design tools for rapid prototyping",
-                "Honed visual aesthetics, color theory, and typography skills"
+                "Produced engaging visual content, brand assets, and thumbnails for clients",
+                "Edited multimedia video content for social media and creative showcases",
+                "Utilized Canva, Photoshop, and editing tools for rapid content creation",
+                "Strengthened skills in visual aesthetics, color theory, and typography"
             ],
             technologies: ["Graphic Design", "Video Editing", "Canva", "Visual Content", "Creative Direction"]
         },
         {
             position: "Graphic Designer",
-            company: "Creative Projects",
+            company: "Freelance",
             period: "2022",
             location: "Bangladesh",
-            description: "Created logos, banners, and visual content while developing my design skills and creative approach.",
+            description: "Stepped into the world of professional design by taking on freelance graphic design work. Created logos, banners, and digital graphics for various clients, building a solid design foundation and developing a personal creative style.",
             responsibilities: [
-                "Designed distinctive logos, banners, and digital graphics",
-                "Collaborated on creative project briefs and marketing materials",
-                "Developed strong visual presentation and layout sensibilities"
+                "Designed distinctive logos, banners, and digital graphics for clients",
+                "Collaborated on creative briefs, brand identities, and marketing materials",
+                "Developed strong visual presentation, layout, and composition skills"
             ],
-            technologies: ["Logo Design", "Banners", "Visual Assets", "Design Principles"]
+            technologies: ["Logo Design", "Banners", "Visual Assets", "Design Principles", "Canva"]
+        },
+        {
+            position: "Microsoft Office",
+            company: "Begin Learning",
+            period: "2021",
+            location: "Bangladesh",
+            description: "Began my digital journey by mastering Microsoft Office — building a solid foundation in productivity tools including Word, Excel, and PowerPoint. This first step sparked a deep curiosity for technology and set the stage for everything that followed.",
+            responsibilities: [
+                "Mastered Microsoft Word for professional document creation and formatting",
+                "Built data organization and analysis skills with Microsoft Excel",
+                "Created structured, visual presentations using Microsoft PowerPoint",
+                "Developed foundational computer literacy and digital communication skills"
+            ],
+            technologies: ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Computer Fundamentals"]
         },
         {
             position: "Digital Skills Foundation",
             company: "Learning & Exploration",
             period: "2021",
             location: "Bangladesh",
-            description: "Started my digital journey with Microsoft Office, building foundational computer skills and developing an interest in technology.",
+            description: "Embarked on my very first steps into the digital world — exploring computers, technology, and basic digital tools. This foundational phase ignited a lifelong passion for learning technology and laid the groundwork for an ambitious journey in software development.",
             responsibilities: [
-                "Learned core productivity tools: Word, Excel, and PowerPoint",
-                "Built essential computer literacy and digital communication skills",
-                "Sparked lifelong curiosity for software, systems, and technology"
+                "Explored computers, operating systems, and fundamental digital concepts",
+                "Developed curiosity for software, internet, and how technology works",
+                "Built early digital literacy and problem-solving instincts",
+                "Set the foundation for a self-driven path into tech and development"
             ],
-            technologies: ["Microsoft Office", "MS Word", "MS Excel", "Computer Fundamentals"]
+            technologies: ["Computer Fundamentals", "Digital Literacy", "Internet Basics", "Problem Solving"]
         }
     ],
     education: [

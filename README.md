@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Portfolio Banner](./public/images/og-image.png)
+![Portfolio Banner](./public/images/og-image.jpg)
 
 **A modern, high-performance 3D developer portfolio** built with React, TypeScript, Three.js, GSAP, and WebGL.
 

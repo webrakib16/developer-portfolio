@@ -5,9 +5,9 @@ import { lenis } from "./Navbar";
 
 const TYPING_PHRASES = [
   "Frontend Dev & AI Engineer",
-  "Full Stack Developer",
+  "Frontend Developer",
   "React & Next.js Expert",
-  "Frontend Dev & AI Engineer",
+  "AI Engineer",
 ];
 
 const useTypewriter = (phrases: string[], typingSpeed = 60, deletingSpeed = 35, pauseMs = 1800) => {

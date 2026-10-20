@@ -1,4 +1,4 @@
-# 🚀 Akib Rakib — 3D Developer Portfolio
+# 🚀 Akib Rakib — Frontend Dev & AI Engineer | 3D Portfolio
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 
 ## 👨‍💻 About Me
 
-I'm **Akib Rakib** — a **Frontend & React Developer** from Rajshahi, Bangladesh.
+I'm **Akib Rakib** — a **Frontend Dev & AI Engineer** from Rajshahi, Bangladesh.
 
 > *"I Don't Just Write Code. I Build Solutions."*
 
@@ -144,7 +144,7 @@ To personalize this portfolio for yourself:
 
 Add these in your repo settings for better discoverability:
 
-`portfolio` `developer-portfolio` `3d-portfolio` `react` `typescript` `threejs` `gsap` `webgl` `vite` `frontend` `react-developer` `bangladesh`
+`portfolio` `developer-portfolio` `3d-portfolio` `react` `typescript` `threejs` `gsap` `webgl` `vite` `frontend` `ai-engineer` `frontend-dev` `bangladesh`
 
 ---
 

@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
           {/* Column 1: Profile & Bio */}
           <div className="footer-col footer-col-brand">
             <h3 className="footer-brand-name">Akib Rakib</h3>
-            <span className="footer-brand-title">Frontend &amp; React Developer</span>
+            <span className="footer-brand-title">Frontend Dev &amp; AI Engineer</span>
             <p className="footer-brand-desc">
               Building modern, responsive web applications with clean UI and reliable functionality.
             </p>

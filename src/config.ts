@@ -90,18 +90,18 @@ export const config = {
             technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "AI APIs"]
         },
         {
-            position: "Full Stack Developer",
+            position: "Frontend Developer",
             company: "Self-Taught & Projects",
             period: "2025",
             location: "Bangladesh",
-            description: "Expanded into full-stack development through self-directed learning and hands-on projects. Built complete web applications covering both frontend and backend — mastering REST APIs, databases, authentication, and deployment to deliver real-world solutions.",
+            description: "Deepened frontend expertise through self-directed learning and hands-on project building. Mastered React, Next.js, TypeScript, and Tailwind CSS — delivering polished, responsive, and accessible web applications with professional-grade UI quality.",
             responsibilities: [
-                "Developed full-stack web applications with React, Next.js, and Node.js",
-                "Architected REST APIs, request validation, and CRUD database operations",
-                "Built responsive, accessible user interfaces with Tailwind CSS",
-                "Implemented authentication systems and state management solutions"
+                "Built complex React and Next.js applications with TypeScript",
+                "Created pixel-perfect, responsive UIs with Tailwind CSS",
+                "Implemented dynamic routing, state management, and API integration",
+                "Developed reusable component libraries and clean code architecture"
             ],
-            technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "Better Auth"]
+            technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "REST APIs", "Git", "Vercel"]
         },
         {
             position: "Digital Marketer & Frontend Developer",
@@ -157,20 +157,6 @@ export const config = {
                 "Developed foundational computer literacy and digital communication skills"
             ],
             technologies: ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Computer Fundamentals"]
-        },
-        {
-            position: "Digital Skills Foundation",
-            company: "Learning & Exploration",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Embarked on my very first steps into the digital world — exploring computers, technology, and basic digital tools. This foundational phase ignited a lifelong passion for learning technology and laid the groundwork for an ambitious journey in software development.",
-            responsibilities: [
-                "Explored computers, operating systems, and fundamental digital concepts",
-                "Developed curiosity for software, internet, and how technology works",
-                "Built early digital literacy and problem-solving instincts",
-                "Set the foundation for a self-driven path into tech and development"
-            ],
-            technologies: ["Computer Fundamentals", "Digital Literacy", "Internet Basics", "Problem Solving"]
         }
     ],
     education: [
